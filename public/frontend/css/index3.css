@@ -1,0 +1,152 @@
+.carousel .carousel-indicators button {
+   width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #C4C4C4 !important;
+}
+.carousel .carousel-indicators .active  {
+  width: 7px;
+  height: 5px;
+  background: #fff !important;
+  border-radius: 5px;
+}
+
+.bg-Newsletter{
+  background-image: url(../img/index/newsletter3.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+.bg-in3-1{
+  background-image: url(../img/index/12.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+.bg-in3-2{
+  background-image: url(../img/index/11.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+.bg-in3-3{
+  background-image: url(../img/index/13.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+.bg-in-size{
+  width: 100%;
+  min-height: 300px;
+}
+
+.btn-catagory{
+  background: rgba(190, 206, 199, 0.45);
+  border: 2px solid #758BFD ;
+  border-radius: 18px;
+  font-weight: 600;
+  padding: 10px 15px;
+  color: #000000;
+}
+.btn-catagory:hover{
+  border: 1px solid #758BFD ;
+  border-radius: 18px;
+  font-weight: 800;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+#cat .owl-nav {
+display: block!important;
+width: 100%;
+margin-top: -50px;
+}
+
+#cat .owl-nav .owl-next {
+margin-right: -70px;
+float: right;
+background: transparent;
+}
+
+#cat .owl-nav .owl-prev {
+margin-left: -63px;
+left: -50px;
+float: left;
+background: transparent;
+}
+
+#dpin .owl-nav{
+  position: absolute;
+  top: -70px;
+}
+
+#tspw .owl-nav{
+  position: absolute;
+  top: 40%;
+}
+#tspw .owl-nav .owl-next {
+  margin-right: -30px;
+float: right;
+background: transparent;
+}
+
+#tspw .owl-nav .owl-prev {
+float: left;
+background: transparent;
+}
+#dppp .owl-nav{
+  position: absolute;
+  top: 45%;
+}
+#dppp .owl-nav .owl-next {
+  margin-right: -30px;
+float: right;
+background: transparent;
+}
+
+#dppp .owl-nav .owl-prev {
+float: left;
+background: transparent;
+}
+
+#rvpp .owl-nav{
+  position: absolute;
+  top: 40%;
+}
+#rvpp .owl-nav .owl-next {
+  margin-right: -30px;
+float: right;
+background: transparent;
+}
+
+#rvpp .owl-nav .owl-prev {
+float: left;
+background: transparent;
+}
+
+.bg-LOOKBOOK2{
+  background-image: url(../img/index/bg-in2-ru.png);
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media only screen and (max-width: 786px) {
+
+  .btn-must-b{
+    padding: 7px 10px;
+    font-weight: bold;
+    line-height: 2em !important;
+  }
+  .btn-in-b{
+    background-size: 25px 100%;
+    line-height: 2em !important;
+    padding: 2px 5px;
+  }
+}
+
+.bg-fsnnn{
+  background-image: url(../img/index/fsnnn.png);
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
