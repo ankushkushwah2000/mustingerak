@@ -4,15 +4,18 @@
             <div class="col-md-12">
                 <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="carousel">
                     <div class="carousel-indicators mb-lg-5">
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active " aria-current="true" aria-label="Slide 1" button>
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        @foreach ($banner as $key=>$item)
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="{{$key}}" class="{{$key == 0 ? 'active' : ""}} " aria-current="true" aria-label="Slide {{$key +1}}" button>
+                            {{-- <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>     --}}
+                        @endforeach
+                        
 
                     </div>
-                    @foreach ($banner as $b )
                     <div class="carousel-inner p-0">
-                        <div class="carousel-item {{$loop->index + 1 == 1 ? 'active' :''}}">
-                            <div class="carousel-item banner-bg active ">
+                    @foreach ($banner as $b )
+                    
+                            <div class="carousel-item banner-bg {{$loop->index + 1 == 1 ? 'active' :''}} ">
                                 <div class="row">
                                     <div class="col-md-2 relative d-none d-md-block d-lg-block"> <img src="{{url('frontend/img/banr-1.png')}}" class="banr-1-img"></div>
                                     <div class="col-md-5 p-5  my-md-5 text-white">
@@ -33,9 +36,9 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
+                    
                     @endforeach
+                </div>
 
                     <button class="carousel-control-prev ms-1" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon text-black-4" aria-hidden="true"><i class="fa-solid fa-chevron-left"></i></span>

@@ -61,14 +61,14 @@ Route::get('/dashboard', function () {
 
 /* Global Routes */
 
-Route::post("/global/invoice/{order}/genrate", [\App\Http\Controllers\Global\InvoiceController::class, "genrate"])->name("invoice.genrate");
-Route::post("/global/invoice/{order}/show", [\App\Http\Controllers\Global\InvoiceController::class, "show"])->name("invoice.show");
-Route::delete("/global/invoice/{order}/delete", [\App\Http\Controllers\Global\InvoiceController::class, "delete"])->name("invoice.delete");
-Route::put("/global/order/{order}/status/update", [\App\Http\Controllers\Global\OrderStatusController::class, "update"])->name("order.status.update");
+Route::post("/global/invoice/{order}/genrate", [\App\Http\Controllers\Globall\InvoiceController::class, "genrate"])->name("invoice.genrate");
+Route::post("/global/invoice/{order}/show", [\App\Http\Controllers\Globall\InvoiceController::class, "show"])->name("invoice.show");
+Route::delete("/global/invoice/{order}/delete", [\App\Http\Controllers\Globall\InvoiceController::class, "delete"])->name("invoice.delete");
+Route::put("/global/order/{order}/status/update", [\App\Http\Controllers\Globall\OrderStatusController::class, "update"])->name("order.status.update");
 
-Route::post("/global/franchises_invoice/{order}/genrate", [\App\Http\Controllers\Global\FranchiseInvoiceController::class, "genrate"])->name("franchises_invoice.genrate");
-Route::post("/global/franchises_invoice/{order}/show", [\App\Http\Controllers\Global\FranchiseInvoiceController::class, "show"])->name("franchises_invoice.show");
-Route::delete("/global/franchises_invoice/{order}/delete", [\App\Http\Controllers\Global\FranchiseInvoiceController::class, "delete"])->name("franchises_invoice.delete");
+Route::post("/global/franchises_invoice/{order}/genrate", [\App\Http\Controllers\Globall\FranchiseInvoiceController::class, "genrate"])->name("franchises_invoice.genrate");
+Route::post("/global/franchises_invoice/{order}/show", [\App\Http\Controllers\Globall\FranchiseInvoiceController::class, "show"])->name("franchises_invoice.show");
+Route::delete("/global/franchises_invoice/{order}/delete", [\App\Http\Controllers\Globall\FranchiseInvoiceController::class, "delete"])->name("franchises_invoice.delete");
 
 //frontendController
 Route::get('/',[frontendController::class,'index']);

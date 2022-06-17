@@ -283,7 +283,7 @@
             $profile = auth()->user()->profile;
             @endphp
             <img class="round"
-              src="{{ $profile?->imgSrc($profile->image) ?? asset('/images/portrait/small/avatar-s-11.jpg') }}"
+              src="{{ $profile->image ?? asset('/images/portrait/small/avatar-s-11.jpg') }}"
               alt="avatar" height="40" width="40">
             <span class="avatar-status-online"></span>
           </span>
